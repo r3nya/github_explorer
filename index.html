@@ -76,6 +76,27 @@
                 </p>
             </div>
         </div>
+        <div class="col-md-8">
+            {{outlet}}
+        </div>
     </div>
+</script>
+<script type="text/x-handlebars" id="user/index">
+    <h2>{{name}}'s github</h2>
+    <hr>
+    <ul>
+        <li>{{#link-to 'repositories' this}}Repositories{{/link-to}}</li>
+        <li>News and Events</li>
+        <li>Gists</li>
+    </ul>
+</script>
+<script type="text/x-handlebars" id="repositories">
+    <table class="table table-striped">
+        {{#each}}
+        <tr>
+            <td>{{name}}</td>
+        </tr>
+        {{/each}}
+    </table>
 </script>
 </html>
