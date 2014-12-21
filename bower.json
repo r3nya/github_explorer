@@ -1,0 +1,22 @@
+{
+  "name": "github_explorer",
+  "version": "0.0.1",
+  "authors": [
+    "Andrew M. <me@r3nya.ru>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "ember": "~1.9.0"
+  }
+}
