@@ -40,7 +40,7 @@
     <h2>Developers:</h2>
     <ul>
         {{#each}}
-            <li>{{#link-to "user" this}}{{name}}{{/link-to}}</li>
+            <li>{{#link-to "user" this.login}}{{name}}{{/link-to}}</li>
         {{/each}}
     </ul>
 </script>
@@ -86,15 +86,14 @@
     <hr>
     <ul>
         <li>{{#link-to 'repositories' this}}Repositories{{/link-to}}</li>
-        <li>News and Events</li>
-        <li>Gists</li>
     </ul>
 </script>
 <script type="text/x-handlebars" id="repositories">
     <table class="table table-striped">
         {{#each}}
         <tr>
-            <td>{{name}}</td>
+            <td><h4>{{name}}</h4></td>
+            <td>{{description}}</td>
         </tr>
         {{/each}}
     </table>

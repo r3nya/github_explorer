@@ -7,7 +7,8 @@ var devs = [
 ];
 
 window.Github = Ember.Application.create({
-    rootElement: "#github-app"
+    rootElement: "#github-app",
+    LOG_TRANSITIONS: true
 });
 
 Github.Router.map(function() {
